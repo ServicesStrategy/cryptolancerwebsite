@@ -4,7 +4,7 @@ const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg shadow-sm navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img src="./cryptolancer-hr.png" alt="logo" height="40" />
         </a>
         <button
@@ -23,7 +23,9 @@ const Navbar = (props) => {
             {props.MenuItems}
             <li className="nav-item">{props.Chains}</li>
             <li className="nav-item">
-              <a className="nav-link">{props.Balance}</a>
+              <span href="#" className="nav-link">
+                {props.Balance}
+              </span>
             </li>
           </ul>
           {props.Account}

@@ -30,9 +30,7 @@
     "watch:events": "moralis-admin-cli add-contract",
     "deploy": "node Truffle/scripts/deployContract.js",
     "deploypage": "gh-pages -d build",
-    "clean": "npx gh-pages-clean",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint --fix"
+    "clean": "npx gh-pages-clean"
   },
   "eslintConfig": {
     "extends": [
@@ -53,11 +51,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "gh-pages": "^3.2.3"
   }
 }

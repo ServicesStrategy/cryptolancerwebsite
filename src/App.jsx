@@ -10,10 +10,10 @@ import Account from "components/Account/Account";
 import Chains from "components/Chains";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
-import DEX from "components/DEX";
+// import DEX from "components/DEX";
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
-import { Tabs } from "antd";
+// import { Tabs } from "antd";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
@@ -26,36 +26,6 @@ import Navbar from "view/Header/Navbar";
 import Home from "pages/Home";
 import About from "pages/About";
 
-const styles = {
-  content: {
-    display: "flex",
-    justifyContent: "center",
-    fontFamily: "Roboto, sans-serif",
-    color: "#041836",
-    marginTop: "130px",
-    padding: "10px",
-  },
-  header: {
-    position: "fixed",
-    zIndex: 1,
-    width: "100%",
-    background: "#fff",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    fontFamily: "Roboto, sans-serif",
-    borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
-    padding: "0 10px",
-    boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
-  },
-  headerRight: {
-    display: "flex",
-    gap: "20px",
-    alignItems: "center",
-    fontSize: "15px",
-    fontWeight: "600",
-  },
-};
 const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
@@ -77,9 +47,9 @@ const App = () => {
           Account={<Account />}
         />
 
-        <div style={styles.content}>
+        <div>
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route exact path="/about">
@@ -88,7 +58,7 @@ const App = () => {
             <Route path="/wallet">
               <Wallet />
             </Route>
-            <Route path="/1inch">
+            {/* <Route path="/1inch">
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
                   <DEX chain="eth" />
@@ -100,7 +70,7 @@ const App = () => {
                   <DEX chain="polygon" />
                 </Tabs.TabPane>
               </Tabs>
-            </Route>
+            </Route> */}
             <Route path="/erc20balance">
               <ERC20Balance />
             </Route>

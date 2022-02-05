@@ -9,7 +9,7 @@ const AboutSec = () => {
             <h1 className="mb-3 text-center">ABOUT US</h1>
             <p className="text-center fs-5">
               Hello!! We are a bunch of passionate Developers who are in love with WEB 3.0. We are learning more about
-              the space and are trying to solve real world issues using this new groud breaking technology.
+              the space and are trying to solve real world issues using this new ground breaking technology.
             </p>
           </div>
           <div className="col-12 py-4">

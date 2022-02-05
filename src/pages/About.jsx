@@ -1,6 +1,7 @@
 import React from "react";
 import AboutSec from "view/About/AboutSec";
 import Header from "view/Header/Header";
+import ProjectInfo from "view/About/ProjectInfo";
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
           </div>
         </div>
       </Header>
+      <ProjectInfo />
       <AboutSec />
     </>
   );

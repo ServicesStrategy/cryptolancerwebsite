@@ -6,11 +6,7 @@ function NativeBalance(props) {
 
   if (!account || !isAuthenticated) return null;
 
-  return (
-    <div style={{ textAlign: "center", whiteSpace: "nowrap" }}>
-      {balance.formatted}
-    </div>
-  );
+  return <div>{balance.formatted}</div>;
 }
 
 export default NativeBalance;

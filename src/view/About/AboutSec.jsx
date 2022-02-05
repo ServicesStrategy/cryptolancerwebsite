@@ -7,13 +7,13 @@ const AboutSec = () => {
         <div className="row">
           <div className="col-12">
             <h1 className="mb-3 text-center">ABOUT US</h1>
-            <p className="text-center">
-              Hello we are Developers, and learning WEB 3.0 and trying to solve
-              realworld issues using this new opportunity we get.
+            <p className="text-center fs-5">
+              Hello!! We are a bunch of passionate Developers who are in love with WEB 3.0. We are learning more about
+              the space and are trying to solve real world issues using this new groud breaking technology.
             </p>
           </div>
           <div className="col-12 py-4">
-            <div className="row g-2 justify-content-between">
+            <div className="row g-2 justify-content-center">
               <div className="col-12 col-md-6 col-lg-3">
                 {/* card   */}
                 <div className="card">
@@ -50,11 +50,8 @@ const AboutSec = () => {
                     <h3 className="card-title">ARUN KC</h3>
                     <small className="card-text mb-3">Data Engineer</small>
                     <p className="card-text">
-                      I’m currently working on improving my problem solving
-                      skills 😄
-                      <br />
-                      👀 I'm interested in decentralized systems and full stack
-                      development
+                      Ahoy!! I'm Arun, a Data Engineer (Backend Dev) by day, Web3 Hacker by night.
+                      I'm learning about Web3 and wish to break into this game changing space 😄
                     </p>
                   </div>
                 </div>

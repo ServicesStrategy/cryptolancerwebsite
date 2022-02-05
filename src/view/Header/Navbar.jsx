@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg shadow-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg shadow navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img src="./cryptolancer-hr.png" alt="logo" height="40" />

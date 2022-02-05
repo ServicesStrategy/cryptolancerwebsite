@@ -1,11 +1,12 @@
 import { useMoralis } from "react-moralis";
+import { NavLink } from "react-router-dom";
 // import { getEllipsisTxt } from "helpers/formatters";
 import Blockie from "../Blockie";
 import { Button, Card, Modal } from "antd";
 import { useState } from "react";
 import Address from "../Address/Address";
-import { SelectOutlined } from "@ant-design/icons";
-import { getExplorer } from "helpers/networks";
+// import { SelectOutlined } from "@ant-design/icons";
+// import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
 const styles = {
@@ -44,8 +45,7 @@ const styles = {
 };
 
 function Account() {
-  const { authenticate, isAuthenticated, account, chainId, logout } =
-    useMoralis();
+  const { authenticate, isAuthenticated, account, logout } = useMoralis();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isAuthModalVisible, setIsAuthModalVisible] = useState(false);
 
@@ -85,7 +85,11 @@ function Account() {
                 key={key}
                 onClick={async () => {
                   try {
-                    await authenticate({ provider: connectorId });
+                    await authenticate({
+                      signingMessage:
+                        "Welcome to cryptolancer, A decentralized freelance marketplace. I hope you will find what you are looking for!!",
+                      provider: connectorId,
+                    });
                     window.localStorage.setItem("connectorId", connectorId);
                     setIsAuthModalVisible(false);
                   } catch (e) {
@@ -154,14 +158,28 @@ function Account() {
             style={{ fontSize: "20px" }}
           />
           <div style={{ marginTop: "10px", padding: "0 10px" }}>
-            <a
+            {/* <a
               href={`${getExplorer(chainId)}/address/${account}`}
               target="_blank"
               rel="noreferrer"
             >
               <SelectOutlined style={{ marginRight: "5px" }} />
               View on Explorer
-            </a>
+            </a> */}
+          </div>
+          <div className="d-grid gap-2">
+            <NavLink className="btn btn-primary" to="/about">
+              DASHBOARD
+            </NavLink>
+            <NavLink className="btn btn-primary" to="/">
+              MESSAGE
+            </NavLink>
+            <NavLink className="btn btn-primary" to="/">
+              PROFILE
+            </NavLink>
+            <NavLink className="btn btn-primary" to="/">
+              GIG LISTING
+            </NavLink>
           </div>
         </Card>
         <Button

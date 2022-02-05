@@ -1,0 +1,17 @@
+/* Colour pallet  */
+:root {
+  --primary-color: #54bab9;
+  --secondary-color: #e9dac1;
+  --light: #f7ecde;
+  --lighter: #fbf8f1;
+  --dark: #313130;
+  --darker: #181818;
+}
+.full-screen-hero {
+  height: 90vh;
+  background-color: var(--secondary-color);
+}
+.page-header {
+  height: 30vh;
+  background-color: var(--secondary-color);
+}

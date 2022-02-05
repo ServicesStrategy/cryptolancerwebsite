@@ -8,7 +8,7 @@ const ProjectInfo = () => {
           <div className="col-md-6">
             <h1 className="mb-3">PROJECT INFO</h1>
             <h4 className="mb-3"># WHAT ARE WE BUILDING?</h4>
-            <p className="fs-5 mb-3">
+            <p className="mb-3">
               Cryptolancer.in is a decentralized application which will offer
               its users to Hire talented freelancers and pay in crypto. We are
               planning to launch it on Polygon Matic Chain, since it has very
@@ -16,7 +16,7 @@ const ProjectInfo = () => {
               later we will scale it to other chains.
             </p>
 
-            <p className="fs-5 mb-3">
+            <p className="mb-3">
               we want to create a freelance marketplace like fiverr, but
               decentralized all transactions will happen on blockchain with
               complete transparency + without reviling someone's Identity over
@@ -26,7 +26,7 @@ const ProjectInfo = () => {
               artists with employers,
             </p>
 
-            <p className="fs-5 mb-3">
+            <p className="mb-3">
               we are using moralis web3 provider so we are in our development
               phase so we are only focusing on polygon chain. we will deploy our
               test contracts on testnet very soon
@@ -124,7 +124,7 @@ const ProjectInfo = () => {
               </div>
             </div>
 
-            <p className="fs-5 mb-3">checkout our plan and cash flow:</p>
+            <p className="mb-3">checkout our plan and cash flow:</p>
 
             <a
               href="https://drive.google.com/file/d/12baBQtMmsUcHhaRRtfSalu-V4hSh60lF/view?usp=sharing"

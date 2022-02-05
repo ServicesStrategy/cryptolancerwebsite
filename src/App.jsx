@@ -17,6 +17,7 @@ import MenuItems from "./components/MenuItems";
 import Navbar from "view/Header/Navbar";
 import Home from "pages/Home";
 import About from "pages/About";
+import Dashboard from "pages/Dashboard";
 
 const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
@@ -46,6 +47,9 @@ const App = () => {
             </Route>
             <Route exact path="/about">
               <About />
+            </Route>
+            <Route exact path="/dashboard">
+              <Dashboard />
             </Route>
             <Route path="/wallet">
               <Wallet />

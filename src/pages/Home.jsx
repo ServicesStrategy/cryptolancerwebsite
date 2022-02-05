@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import AboutSec from "view/About/AboutSec";
+import ProjectInfo from "view/About/ProjectInfo";
 import Header from "view/Header/Header";
 
 const Home = () => {
@@ -37,6 +39,8 @@ const Home = () => {
           </div>
         </div>
       </Header>
+      <AboutSec />
+      <ProjectInfo />
     </>
   );
 };

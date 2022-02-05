@@ -168,7 +168,7 @@ function Account() {
             </a> */}
           </div>
           <div className="d-grid gap-2">
-            <NavLink className="btn btn-primary" to="/about">
+            <NavLink className="btn btn-primary" to="/dashboard">
               DASHBOARD
             </NavLink>
             <NavLink className="btn btn-primary" to="/">

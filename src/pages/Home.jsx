@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import AboutSec from "view/About/AboutSec";
+import AboutSec from "view/About/AboutSec";
 import ProjectInfo from "view/About/ProjectInfo";
 import Header from "view/Header/Header";
 
@@ -27,19 +27,19 @@ const Home = () => {
                 compatable chains.
               </p>
               <NavLink className="btn m-2 ms-0 btn-primary btn-lg" to="/about">
-                POST YOUR REQUIREMENT
+                About Us
               </NavLink>
               <NavLink
                 className="btn btn-outline-success m-2 ms-0 btn-lg"
-                to="/about"
+                to="/dashboard"
               >
-                JOIN CRYPTOLANCER
+                How Its Going!
               </NavLink>
             </div>
           </div>
         </div>
       </Header>
-      {/* <AboutSec /> */}
+      <AboutSec />
       <ProjectInfo />
     </>
   );

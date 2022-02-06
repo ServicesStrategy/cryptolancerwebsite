@@ -66,7 +66,7 @@ const AboutSec = () => {
                   <img
                     src="./images/himanshu.png"
                     className="card-img-top"
-                    alt="Kritik"
+                    alt="himanshu"
                   />
                   <div className="card-body">
                     <h3 className="card-title text-uppercase">Himanshu Goel</h3>
